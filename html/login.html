@@ -14,8 +14,66 @@
             background-image: url("../imatgeslogin/fondo.jpg");
         }
 
+        .contenidor {
+            width: 35%;
+            height: 450px;
+            background-color: white;
+            margin: 17% auto;
+            border-radius: 3%;
+            text-align: center;
+        }
+
         img {
-            border-radius: 30%;
+            width: 120px;
+        }
+
+        h2 {
+            float: right;
+            margin-right: 1.5em;
+            margin-top: 1.6em;
+            font-family: "Wide Latin";
+            font-size: 15px;
+        }
+
+        form {
+            margin-top: 2em;
+        }
+
+        input[type=text], input[type=password] {
+            width: 70%;
+            height: 40px;
+            font-size: 20px;
+            padding-left: 2%;
+            font-family: "Trebuchet MS";
+        }
+
+        button {
+            width: 25%;
+            height: 40px;
+            font-size: 20px;
+            font-family: "Trebuchet MS";
+        }
+
+        button:hover {
+            background-color: darkgreen;
+            color: white;
+            font-weight: bold;
+            border-color: darkgreen;
+        }
+
+        button:active {
+            color: blue;
+        }
+
+        p {
+            margin-top: 2em;
+            font-size: 15px;
+            font-family: "Trebuchet MS";
+        }
+
+        a:hover {
+            text-decoration: none;
+            font-weight: bold;
         }
         
     </style>
@@ -25,17 +83,19 @@
 
     <div class="contenidor">
 
-        <img src="../imatgeslogin/images.png" alt="robotito">
-        <h2>CN ROBOTICS</h2>
-        
+        <div class="imagen">
+            <img src="../imatgeslogin/images.png" alt="robotito">
+            <h2>CN ROBOTICS</h2>
+        </div>
+
         <form>
             <!-- <label for="username">Username</label> -->
-            <input type="text" id="username" name="username" placeholder="Username"><br><br>
-            <input type="password" id="pass" name="pass" placeholder="Password"><br><br>
+            <input type="text" id="username" name="username" placeholder="Nom d'usuari"><br><br>
+            <input type="password" id="pass" name="pass" placeholder="Contrassenya"><br><br>
             <button type="submit">Entrar</button>
         </form>
 
-        <p> Are you still not registered? <a onclick="myregister();">Register</a></p>
+        <p> Encara no estas registrat? <a onclick="myregister();">Registrar-me</a></p>
 
     </div>
 
