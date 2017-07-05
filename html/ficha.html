@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CN ROBOTICS CORP.</title>
+</head>
+<body>
+
+    <div class="container1">
+
+        <form>
+
+            <label for="nom">Name</label>
+            <input type="text"  name="nom" id="nom" placeholder="posar nom">
+
+            <br><br>
+
+            <label for="congnom">Congnom</label>
+            <input type="text"  name="congnom" id="congnom" placeholder="posar congnom">
+
+            <br><br>
+
+            <label for="dni">DNI</label>
+            <input type="text" maxlength="8" name="dni" id="dni" placeholder="posar dni">
+
+            <br><br>
+
+            <label for="direccio">Direcció</label>
+            <input type="text" name="direccio" id="direccio" placeholder="posar direcció">
+
+            <br><br>
+
+            <label for="data">Data de naixement </label>
+            <input type="date" name="data" id="data">
+
+            <br><br>
+
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+
+            <br><br>
+
+            <label for="lloctre">Escull el teu lloc de treball:</label>
+            <select class="" name="lloctre" id="lloctre">
+                <option value="" disabled selected> Escull una categoría </option>
+                <option value="Direccio">Direcció</option>
+                <option value="Administracio">Administració</option>
+                <option value="Produccio">Produccio</option>
+                <option value="RRHH">Recursos Humans</option>
+                <option value="Becari">Becari</option>
+            </select>
+
+            <br><br>
+
+            <label for="range">Umbral de renta:</label>
+            <input type="range" min="1" max="4" id="range">
+
+            <br><br>
+
+            <label>Escull tipus de lletra:</label><br>
+            <input type="radio" name="radio" id="arial" checked> Arial <br>
+            <input type="radio" name="radio" id="trebuchet"> Trebuchet MS <br>
+            <input type="radio" name="radio" id="tahoma"> Tahoma <br>
+            <input type="radio" name="radio" id="homer"> Homer Simpson <br>
+            <input type="radio" name="radio" id="fantasy"> Fantasy <br>
+
+            <br><br>
+
+            <label for="file">Foto:</label>
+            <input type="file" name="file" id="file">
+
+            <br><br>
+
+            <button type="button" onclick="getData();" name="button">Enviar Dades</button>
+
+        </form>
+
+    </div>
+
+    <div class="container2" id="fild">
+
+        <p id="n.nom"></p>
+        <p id="n.congnom"></p>
+        <p id="n.direccio"></p>
+        <p id="n.data"></p>
+        <p id="n.dni"></p>
+        <p id="n.rang"></p>
+        <p id="n.categoria"></p>
+
+    </div>
+
+    <script type="text/javascript" src="../ficha.js"></script>
+
+</body>
+</html>
