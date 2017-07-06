@@ -2,9 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CN ROBOTICS CORP.</title>
+
+    <style>
+        html, body {
+            background-image: url("../imatges_registre/fondo-celeste-oscuro-6269.jpg");
+        }
+
+        /*******MENU************/
+        header {
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            top:0;
+            left:0;
+            background-color: rgba(255, 255, 255, 0.29);
+        }
+        div {
+            float: left;
+            width: 500px;
+            margin-left: 15px;
+        }
+        img {
+            width: 14%;
+            height: auto;
+            margin-left: 2%;
+            margin-top: 10px;
+            margin-right: 20px;
+            border-radius: 20%;
+            float: left;
+        }
+        h6 {
+            font-size: 20px;
+            color: white;
+            font-family: "Wide Latin";
+            margin-top: 1.9em;
+        }
+        ul.menu {
+            margin-top: 2em;
+            list-style: none;
+            float: right;
+        }
+        .menu li {
+            float:left;
+            margin-right: .7em;
+            padding: .6em;
+            background-color: rgba(146, 147, 255, 0.51);
+            border-radius: 20%;
+            transition: background-color, .6s;
+        }
+        .menu li:hover {
+            background-color: rgba(0, 2, 95, 0.93);
+            color: white;
+            cursor: pointer;
+        }
+        a {
+            font-family: "Trebuchet MS";
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+        a:active {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        /****************************/
+
+
+        .imttx1 {
+            border-radius: 10%;
+            float: left;
+            margin-top:10px;
+            margin-left: 10px;
+        }
+
+    </style>
+
 </head>
 <body>
+
+<header>
+    <div>
+        <img src="../imatgeslogin/Applications-robot4.png" alt="robotito">
+        <h6>CN ROBOTICS</h6>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="noticia.html">Noticies</a></li>
+            <li><a href="ficha.html">Ficha Tecnica</a></li>
+            <li><a href="home.html">About Us</a></li>
+            <li><a href="login.html">Sortir</a></li>
+        </ul>
+    </nav>
+    <div class="texte">
+
+        <img class="imttx1" src="../imatges%20noticies/noticia1.jpg" alt="Foto d'exemple.">
+        <p>
+            NOticia falsa de wikipedia.
+        </p>
+    </div>
+
+</header>
 
 </body>
 </html>
