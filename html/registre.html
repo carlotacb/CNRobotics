@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>CN ROBOTICS CORP.</title>
 
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
     <style>
         body {
             background-image: url("../imatgesregister/fondo-celeste-oscuro-6269.jpg");
-
         }
 
         h2 {
@@ -16,6 +21,7 @@
             font-family: "Wide Latin";
             font-size: 40px;
         }
+
         img {
             margin-top: 18%;
             margin-left: 20%;
@@ -33,6 +39,7 @@
             font-family: "Trebuchet MS";
             float: right;
         }
+
         input[type=text], input[type=password], input[type=email] {
             width: 70%;
             height: 40px;
@@ -40,11 +47,13 @@
             padding-left: 2%;
             font-family: "Trebuchet MS";
         }
+
         label{
             font-size: 20px;
             font-family: "Trebuchet MS";
             font-weight: bold;
         }
+
         button {
             width: 25%;
             height: 40px;
@@ -62,14 +71,13 @@
         .registra:active {
             color: blue;
         }
+
         .cancela:hover {
             background-color: darkred;
             color: white;
             font-weight: bold;
             border-color: darkred;
         }
-
-
 
     </style>
 
@@ -103,11 +111,20 @@
         porque todos tienen el asterisco-->
         <p>Els camps marcats amb (*) són obligatoris.</p>
         <br>
-        <button class="cancela" type="submit">Cancel</button>
+        <button class="cancela" type="button" onclick="cancel();">Cancel</button>
         <button class="registra" type="submit">Register</button>
 
 
     </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../js/registre.js"></script>
 
 </body>
 </html>

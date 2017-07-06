@@ -1,0 +1,69 @@
+body {
+    background-image: url("../imatgeslogin/fondo.jpg");
+}
+
+.contenidor {
+    width: 35%;
+    height: 450px;
+    background-color: white;
+    margin: 17% auto;
+    border-radius: 3%;
+    text-align: center;
+}
+
+img {
+    width: 120px;
+}
+
+h2 {
+    float: right;
+    margin-right: 1.5em;
+    margin-top: 1.6em;
+    font-family: "Wide Latin";
+    font-size: 15px;
+}
+
+form {
+    margin-top: 2em;
+}
+
+input[type=text], input[type=password] {
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 2%;
+    font-family: "Trebuchet MS";
+}
+
+button {
+    width: 25%;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Trebuchet MS";
+}
+
+button:hover {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-color: darkgreen;
+}
+
+button:active {
+    color: blue;
+}
+
+p {
+    margin-top: 2px;
+    font-size: 15px;
+    font-family: "Trebuchet MS";
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
