@@ -4,125 +4,40 @@
     <meta charset="UTF-8">
     <title>CN ROBOTICS CORP.</title>
 
-
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
 
-    <style>
-        body {
-            background-image: url("../imatgesregister/fondo-celeste-oscuro-6269.jpg");
-        }
-
-        h2 {
-            margin-top: 4.8%;
-            text-align: center;
-            font-family: "Wide Latin";
-            font-size: 40px;
-        }
-
-        img {
-            margin-top: 18%;
-            margin-left: 20%;
-            float: left;
-            width: 300px;
-            height: auto;
-        }
-
-        .contenidor {
-            margin-top: 10%;
-            margin-right: 20%;
-            width: 35%;
-            height: 450px;
-            text-align: center;
-            font-family: "Trebuchet MS";
-            float: right;
-        }
-
-        input[type=text], input[type=password], input[type=email] {
-            width: 70%;
-            height: 40px;
-            font-size: 20px;
-            padding-left: 2%;
-            font-family: "Trebuchet MS";
-        }
-
-        label{
-            font-size: 20px;
-            font-family: "Trebuchet MS";
-            font-weight: bold;
-        }
-
-        button {
-            width: 25%;
-            height: 40px;
-            font-size: 20px;
-            font-family: "Trebuchet MS";
-        }
-
-        .registra:hover {
-            background-color: darkgreen;
-            color: white;
-            font-weight: bold;
-            border-color: darkgreen;
-        }
-
-        .registra:active {
-            color: blue;
-        }
-
-        .cancela:hover {
-            background-color: darkred;
-            color: white;
-            font-weight: bold;
-            border-color: darkred;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/registre.css">
 
 </head>
 <body>
 
-    <div>
-        <img src="../imatgesregister/robo-1.png" alt="robotito">
-        <h2>CN ROBOTICS</h2>
-
-    </div>
-
-
+     <h2>CN ROBOTICS</h2>
+     <img src="../imatges_registre/robo-1.png" alt="robotito">
 
     <form class="contenidor">
-        <label for="username">Username *</label><br>
+        <label for="username">Username <label class="as">*</label></label><br>
         <input type="text" id="username" minlength="3" required>
         <p>L'usuari ha de tenir més de 3 caràcters.</p>
 
-        <label for="email">Email *</label><br>
+        <label for="email">Email <label class="as">*</label></label><br>
         <input type="email" id="email" required>
         <br><br>
-        <label for="pass">Password *</label><br>
+        <label for="pass">Password <label class="as">*</label></label><br>
         <input type="password" id="pass" required>
         <br><br>
-        <label for="pass">Confirm Password *</label><br>
+        <label for="pass">Confirm Password <label class="as">*</label></label><br>
         <input type="password" id="pass" required>
         <br>
-        <!-- esto nose si hace falta, porque te lo marca solo
-        En todoo caso pondria que todos los campos son obligatorios,
-        porque todos tienen el asterisco-->
-        <p>Els camps marcats amb (*) són obligatoris.</p>
+        <p class="dos">Els camps marcats amb (<label class="astx">*</label>) són obligatoris.</p>
         <br>
         <button class="cancela" type="button" onclick="cancel();">Cancel</button>
         <button class="registra" type="submit">Register</button>
 
 
     </form>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="../js/registre.js"></script>
 
