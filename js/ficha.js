@@ -2,6 +2,7 @@
 function getData() {
     var inputs = document.getElementsByTagName('input');
     var dni = 0;
+    var y = 0;
 
     var x =  document.getElementById("lloctre");
     document.getElementById('n_categoria').innerHTML = "Categoria: " + x.value;
@@ -23,8 +24,15 @@ function getData() {
             inputs[i].value="";
         }
         else if(inputs[i].name == "lletra"){
-            nif(dni, inputs[i].value);
-            document.getElementById('n_dni').innerHTML  = "DNI: " + dni + inputs[i].value;
+            if (nif(dni, inputs[i].value)) {
+                document.getElementById('n_dni').innerHTML  = "DNI: " + dni + inputs[i].value;
+                y = 0;
+            }
+            else {
+                document.getElementById('n_dni').innerHTML  = "DNI ERRONI: " + dni + inputs[i].value;
+                document.getElementById('n_dni').style.color  = "red";
+                y = 1;
+            }
             inputs[i].value="";
         }
         else if (inputs[i].name == "color") {
@@ -33,6 +41,7 @@ function getData() {
         }
         else if (inputs[i].name == "color2") {
             document.getElementById('fild').style.color = inputs[i].value;
+            if (y === 0) document.getElementById('n_dni').style.color  = inputs[i].value;
             inputs[i].value="ffff";
         }
         else if (inputs[i].name == "data") {
@@ -65,6 +74,7 @@ function nif(dni, letra) {
     letra=letra.substring(numero,numero+1);
     if (letra!=letr.toUpperCase()) {
         alert('La lletra del DNI no correspon al numero');
+        return false;
     }
-
+    return true;
 }
