@@ -1,36 +1,70 @@
 
 function getData() {
     var inputs = document.getElementsByTagName('input');
+    var dni = 0;
 
-    for (var i = 0; i < inputs.length; i++) {
+    var x =  document.getElementById("lloctre");
+    document.getElementById('n_categoria').innerHTML = "Categoria: " + x.value;
+    x.value = "";
+
+    document.getElementById('titol').innerHTML = "FICHA TÉCNICA";
+
+    for (var i = 0; i < (inputs.length); i++) {
         if (inputs[i].name == "nom") {
-            document.getElementById('n.nom').innerHTML  = inputs[i].value;
+            document.getElementById('n_nom').innerHTML  = "Nom: " + inputs[i].value;
+            inputs[i].value="";
         }
         else if (inputs[i].name == "congnom") {
-            document.getElementById('n.congnom').innerHTML  = inputs[i].value;
+            document.getElementById('n_congnom').innerHTML  = "Congnoms: " + inputs[i].value;
+            inputs[i].value="";
         }
         else if (inputs[i].name == "dni") {
-            document.getElementById('n.dni').innerHTML  = inputs[i].value;
+            dni = inputs[i].value;
+            inputs[i].value="";
+        }
+        else if(inputs[i].name == "lletra"){
+            nif(dni, inputs[i].value);
+            document.getElementById('n_dni').innerHTML  = "DNI: " + dni + inputs[i].value;
+            inputs[i].value="";
         }
         else if (inputs[i].name == "color") {
             document.getElementById('fild').style.backgroundColor = inputs[i].value;
+            inputs[i].value="ffff";
+        }
+        else if (inputs[i].name == "color2") {
+            document.getElementById('fild').style.color = inputs[i].value;
+            inputs[i].value="ffff";
         }
         else if (inputs[i].name == "data") {
-            document.getElementById('n.data').innerHTML  = inputs[i].value;
+            document.getElementById('n_data').innerHTML  = "Data de naixement: " + inputs[i].value;
+            inputs[i].value="";
         }
         else if (inputs[i].name == "direccio") {
-            document.getElementById('n.direccio').innerHTML  = inputs[i].value;
+            document.getElementById('n_direccio').innerHTML  = "Direcció: " + inputs[i].value;
+            inputs[i].value="";
         }
-        inputs[i].value="";
+
+        else if (inputs[i].name == "range") {
+            document.getElementById('n_sat').innerHTML  = "Nivell de satisfacció: " + inputs[i].value;
+        }
+
+        /*else if (inputs[i].name == "file") {
+
+            document.getElementById('n_img').src = inputs[i].value;
+            console.log('hola');
+        }*/
+    }
+}
+
+function nif(dni, letra) {
+
+    var numero = dni;
+    var letr = letra;
+    numero = numero % 23;
+    letra='TRWAGMYFPDXBNJZSQVHLCKET';
+    letra=letra.substring(numero,numero+1);
+    if (letra!=letr.toUpperCase()) {
+        alert('La lletra del DNI no correspon al numero');
     }
 
 }
-
-
-/*
-*
- <p id="n.rang"></p>
- <p id="n.categoria"></p>
-
- *
-* */

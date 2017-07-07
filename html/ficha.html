@@ -4,154 +4,7 @@
     <meta charset="UTF-8">
     <title>CN ROBOTICS CORP.</title>
 
-    <style>
-        html, body {
-            margin:0;
-            padding:0;
-            background-image: url("../imatges_registre/fondo-celeste-oscuro-6269.jpg");
-        }
-
-        header {
-            position: fixed;
-            width: 100%;
-            height: 100px;
-            top:0;
-            left:0;
-            background-color: rgba(255, 255, 255, 0.29);
-        }
-
-        div {
-            float: left;
-            width: 500px;
-            margin-left: 15px;
-        }
-
-        img {
-            width: 14%;
-            height: auto;
-            margin-left: 2%;
-            margin-top: 10px;
-            margin-right: 20px;
-            border-radius: 20%;
-            float: left;
-        }
-
-        h6 {
-            font-size: 40px;
-            color: white;
-            font-family: "Bauhaus 93";
-            margin-top: .7em;
-        }
-
-        ul.menu {
-            margin-top: 2em;
-            list-style: none;
-            float: right;
-        }
-
-        .menu li {
-            float:left;
-            margin-right: .7em;
-            padding: .6em;
-            background-color: rgba(146, 147, 255, 0.51);
-            border-radius: 20%;
-            transition: background-color, .6s;
-        }
-
-        .menu li:hover {
-            background-color: rgba(0, 2, 95, 0.93);
-            color: white;
-            cursor: pointer;
-        }
-
-        a {
-            font-family: "Trebuchet MS";
-            text-decoration: none;
-            color: black;
-        }
-
-        a:hover {
-            color: white;
-            text-decoration: none;
-        }
-
-        a:active {
-            color: #00ff00;
-            text-decoration: none;
-        }
-
-        .container1 {
-            width: 45%;
-            height: 650px;
-            background-color: rgba(255, 255, 255, 0.29);
-            margin: 6% auto;
-            margin-left: 2%;
-            border-radius: 3%;
-            /*text-align: center;*/
-            border: rgb(77, 120, 129) solid;
-            float: left;
-        }
-
-        .container2 {
-            width: 45%;
-            height: 650px;
-            background-color: rgba(255, 255, 255, 0.29);
-            margin: 6% auto;
-            margin-left: 5%;
-            border-radius: 3%;
-            text-align: center;
-            border: rgb(77, 120, 129) solid;
-        }
-
-        form {
-            margin-top: 1em;
-            padding-left: 2em;
-            font-family: "Trebuchet MS";
-        }
-
-        form p label {
-            display:block;
-            float:left;
-            width:230px;
-        }
-
-        input[type=text], input[type=date], input[type=color] {
-            font-family: "Trebuchet MS";
-            font-size: 15px;
-            height: 20px;
-            width: 40%;
-        }
-
-        input[type=range] {
-            width: 40%;
-        }
-
-        select {
-            font-family: "Trebuchet MS";
-            font-size: 15px;
-            height: 25px;
-            width: 40%;
-        }
-
-        #arial {
-            font-family: Arial;
-        }
-
-        #trebuchet {
-            font-family: "Trebuchet MS";
-        }
-
-        #tahoma {
-            font-family: Tahoma;
-        }
-
-        #brodway {
-            font-family: Broadway;
-        }
-
-
-
-    </style>
+    <link rel="stylesheet" href="../css/registre.css">
 
 </head>
 <body>
@@ -168,7 +21,7 @@
                 <li><a href="noticia.html">Noticies</a></li>
                 <li><a href="ficha.html">Ficha Tecnica</a></li>
                 <li><a href="home.html">About Us</a></li>
-                <li><a href="login.html">Sortir</a></li>
+                <li><a href="index.html">Sortir</a></li>
             </ul>
         </nav>
     </header>
@@ -189,7 +42,8 @@
 
             <p>
                 <label for="dni">DNI</label>
-                <input type="text" maxlength="8" name="dni" id="dni" placeholder="posar dni">
+                <input type="number" maxlength="8" name="dni" id="dni" placeholder="posar dni">
+                <input type="text" maxlength="1" class="lletra" name="lletra" placeholder="X">
             </p>
 
             <p>
@@ -202,9 +56,14 @@
                 <input type="date" name="data" id="data">
             </p>
 
+            <p >
+                <label for="color" >Color fons ficha</label>
+                <input type="color" name="color" id="color"><br>
+            </p>
+
             <p>
-                <label for="color">Color fons ficha</label>
-                <input type="color" name="color" id="color">
+                <label for="color" >Color lletra ficha</label>
+                <input type="color" name="color2" id="colorlletra"><br>
             </p>
 
             <p>
@@ -221,23 +80,18 @@
 
             <p>
                 <label for="range">Satisfacció amb l'empresa:</label>
-                <input type="range" min="0" max="10" id="range">
+                <input type="range" min="0" max="10" id="range" name="range">
             </p>
 
-            <p>
-                <label>Escull tipus de lletra:</label><br>
-                <input type="radio" name="radio"  checked> <label id="arial">Arial</label>
-                <input type="radio" name="radio" id="trebuchet"> Trebuchet MS <br>
-                <input type="radio" name="radio" id="tahoma"> Tahoma <br>
-                <input type="radio" name="radio" id="brodway"> Brodway <br>
-            </p>
-
-                <label for="file">Foto:</label>
-                <input type="file" name="file" id="file">
-
+            <!--
+            <label for="file">Foto:</label>
+            <input type="file" name="file" id="file">
+-->
             <br><br>
 
-            <button type="button" onclick="getData();" name="button">Enviar Dades</button>
+            <div class="con">
+                <button type="button" onclick="getData();" name="button">Enviar Dades</button>
+            </div>
 
         </form>
 
@@ -245,13 +99,15 @@
 
     <div class="container2" id="fild">
 
-        <p id="n.nom"></p>
-        <p id="n.congnom"></p>
-        <p id="n.direccio"></p>
-        <p id="n.data"></p>
-        <p id="n.dni"></p>
-        <p id="n.rang"></p>
-        <p id="n.categoria"></p>
+        <h1 id="titol"></h1>
+        <p id="n_nom"></p>
+        <p id="n_congnom"></p>
+        <p id="n_direccio"></p>
+        <p id="n_data"></p>
+        <p id="n_dni"></p>
+        <p id="n_categoria"></p>
+        <p id="n_sat"></p>
+        <img src="" alt="fotoperfil" style="display: none" id="n_img">
 
     </div>
 
