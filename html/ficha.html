@@ -3,71 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <title>CN ROBOTICS CORP.</title>
+
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+            background-image: url("../imatges_registre/fondo-celeste-oscuro-6269.jpg");
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            top:0;
+            left:0;
+            background-color: rgba(255, 255, 255, 0.29);
+        }
+
+        div {
+            float: left;
+            width: 500px;
+            margin-left: 15px;
+        }
+
+        img {
+            width: 14%;
+            height: auto;
+            margin-left: 2%;
+            margin-top: 10px;
+            margin-right: 20px;
+            border-radius: 20%;
+            float: left;
+        }
+
+        h6 {
+            font-size: 40px;
+            color: white;
+            font-family: "Bauhaus 93";
+            margin-top: .7em;
+        }
+
+        ul.menu {
+            margin-top: 2em;
+            list-style: none;
+            float: right;
+        }
+
+        .menu li {
+            float:left;
+            margin-right: .7em;
+            padding: .6em;
+            background-color: rgba(146, 147, 255, 0.51);
+            border-radius: 20%;
+            transition: background-color, .6s;
+        }
+
+        .menu li:hover {
+            background-color: rgba(0, 2, 95, 0.93);
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            font-family: "Trebuchet MS";
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        .container1 {
+            width: 45%;
+            height: 650px;
+            background-color: rgba(255, 255, 255, 0.29);
+            margin: 6% auto;
+            margin-left: 2%;
+            border-radius: 3%;
+            /*text-align: center;*/
+            border: rgb(77, 120, 129) solid;
+            float: left;
+        }
+
+        .container2 {
+            width: 45%;
+            height: 650px;
+            background-color: rgba(255, 255, 255, 0.29);
+            margin: 6% auto;
+            margin-left: 5%;
+            border-radius: 3%;
+            text-align: center;
+            border: rgb(77, 120, 129) solid;
+        }
+
+        form {
+            margin-top: 1em;
+            padding-left: 2em;
+            font-family: "Trebuchet MS";
+        }
+
+        form p label {
+            display:block;
+            float:left;
+            width:230px;
+        }
+
+        input[type=text], input[type=date], input[type=color] {
+            font-family: "Trebuchet MS";
+            font-size: 15px;
+            height: 20px;
+            width: 40%;
+        }
+
+        input[type=range] {
+            width: 40%;
+        }
+
+        select {
+            font-family: "Trebuchet MS";
+            font-size: 15px;
+            height: 25px;
+            width: 40%;
+        }
+
+        #arial {
+            font-family: Arial;
+        }
+
+        #trebuchet {
+            font-family: "Trebuchet MS";
+        }
+
+        #tahoma {
+            font-family: Tahoma;
+        }
+
+        #brodway {
+            font-family: Broadway;
+        }
+
+
+
+    </style>
+
 </head>
 <body>
+
+    <header>
+        <div>
+            <img src="../imatgeslogin/Applications-robot4.png" alt="robotito">
+            <h6>CN ROBOTICS</h6>
+        </div>
+
+
+        <nav>
+            <ul class="menu">
+                <li><a href="noticia.html">Noticies</a></li>
+                <li><a href="ficha.html">Ficha Tecnica</a></li>
+                <li><a href="home.html">About Us</a></li>
+                <li><a href="login.html">Sortir</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container1">
 
         <form>
 
-            <label for="nom">Name</label>
-            <input type="text"  name="nom" id="nom" placeholder="posar nom">
+            <p>
+                <label for="nom">Name</label>
+                <input type="text"  name="nom" id="nom" placeholder="posar nom">
+            </p>
 
-            <br><br>
+            <p>
+                <label for="congnom">Congnom</label>
+                <input type="text"  name="congnom" id="congnom" placeholder="posar congnom">
+            </p>
 
-            <label for="congnom">Congnom</label>
-            <input type="text"  name="congnom" id="congnom" placeholder="posar congnom">
+            <p>
+                <label for="dni">DNI</label>
+                <input type="text" maxlength="8" name="dni" id="dni" placeholder="posar dni">
+            </p>
 
-            <br><br>
+            <p>
+                <label for="direccio">Direcció</label>
+                <input type="text" name="direccio" id="direccio" placeholder="posar direcció">
+            </p>
 
-            <label for="dni">DNI</label>
-            <input type="text" maxlength="8" name="dni" id="dni" placeholder="posar dni">
+            <p>
+                <label for="data">Data de naixement </label>
+                <input type="date" name="data" id="data">
+            </p>
 
-            <br><br>
+            <p>
+                <label for="color">Color fons ficha</label>
+                <input type="color" name="color" id="color">
+            </p>
 
-            <label for="direccio">Direcció</label>
-            <input type="text" name="direccio" id="direccio" placeholder="posar direcció">
+            <p>
+                <label for="lloctre">Escull el teu lloc de treball:</label>
+                <select class="" name="lloctre" id="lloctre">
+                    <option value="" disabled selected> Escull una categoría </option>
+                    <option value="Direccio">Direcció</option>
+                    <option value="Administracio">Administració</option>
+                    <option value="Produccio">Produccio</option>
+                    <option value="RRHH">Recursos Humans</option>
+                    <option value="Becari">Becari</option>
+                </select>
+            </p>
 
-            <br><br>
+            <p>
+                <label for="range">Satisfacció amb l'empresa:</label>
+                <input type="range" min="0" max="10" id="range">
+            </p>
 
-            <label for="data">Data de naixement </label>
-            <input type="date" name="data" id="data">
+            <p>
+                <label>Escull tipus de lletra:</label><br>
+                <input type="radio" name="radio"  checked> <label id="arial">Arial</label>
+                <input type="radio" name="radio" id="trebuchet"> Trebuchet MS <br>
+                <input type="radio" name="radio" id="tahoma"> Tahoma <br>
+                <input type="radio" name="radio" id="brodway"> Brodway <br>
+            </p>
 
-            <br><br>
-
-            <label for="color">Color</label>
-            <input type="color" name="color" id="color">
-
-            <br><br>
-
-            <label for="lloctre">Escull el teu lloc de treball:</label>
-            <select class="" name="lloctre" id="lloctre">
-                <option value="" disabled selected> Escull una categoría </option>
-                <option value="Direccio">Direcció</option>
-                <option value="Administracio">Administració</option>
-                <option value="Produccio">Produccio</option>
-                <option value="RRHH">Recursos Humans</option>
-                <option value="Becari">Becari</option>
-            </select>
-
-            <br><br>
-
-            <label for="range">Umbral de renta:</label>
-            <input type="range" min="1" max="4" id="range">
-
-            <br><br>
-
-            <label>Escull tipus de lletra:</label><br>
-            <input type="radio" name="radio" id="arial" checked> Arial <br>
-            <input type="radio" name="radio" id="trebuchet"> Trebuchet MS <br>
-            <input type="radio" name="radio" id="tahoma"> Tahoma <br>
-            <input type="radio" name="radio" id="homer"> Homer Simpson <br>
-            <input type="radio" name="radio" id="fantasy"> Fantasy <br>
-
-            <br><br>
-
-            <label for="file">Foto:</label>
-            <input type="file" name="file" id="file">
+                <label for="file">Foto:</label>
+                <input type="file" name="file" id="file">
 
             <br><br>
 

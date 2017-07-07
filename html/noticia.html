@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:margin-top="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>CN ROBOTICS CORP.</title>
 
     <style>
         html, body {
-            margin:0;
-            padding:0;
             background-image: url("../imatges_registre/fondo-celeste-oscuro-6269.jpg");
         }
 
@@ -79,6 +77,32 @@
             color: #00ff00;
             text-decoration: none;
         }
+        .imag {
+             /*margin-top: 10%;
+             margin-right:: 20%;*/
+             float: left;
+             width: 50%;
+             height: auto;
+         }
+        .contenidor {
+            margin-top: 10%;
+            margin-right: 45%;
+
+            width: 40%;
+            height: auto;
+            background-color: lime;
+        }
+        .tit {
+            font-family: "Trebuchet MS";
+            font-size: 250%;
+            font-weight: bold;
+            color: black;
+        }
+        p {
+            font-family: "Trebuchet MS";
+            font-size: 100%;
+            color: #2e2e2e;
+        }
     </style>
 
 </head>
@@ -89,8 +113,6 @@
         <img src="../imatgeslogin/Applications-robot4.png" alt="robotito">
         <h6>CN ROBOTICS</h6>
     </div>
-
-
     <nav>
         <ul class="menu">
             <li><a href="noticia.html">Noticies</a></li>
@@ -101,5 +123,16 @@
     </nav>
 </header>
 
+
+<div class="contenidor">
+    <img class= "imag" src="../imagesnoticies/noti1.jpg"/>
+    <p class="tit">Mi camarero es un robot</p>
+    <p>Abre en San Francisco un restaurante en el que el único humano es el reponedor de servilletas</p>
+</div>
+<div class="contenidor">
+    <img class="imag" src="../imagesnoticies/noti2.jpg" height="257" width="360"/>
+    <p class="tit">Mi camarero es un robot</p>
+    <p>Abre en San Francisco un restaurante en el que el único humano es el reponedor de servilletas</p>
+</div>
 </body>
 </html>
