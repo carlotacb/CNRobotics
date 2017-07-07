@@ -4,6 +4,6 @@
 
 function cancel(){
 
-    window.open('login.html');
+    window.open('index.html');
 
 }

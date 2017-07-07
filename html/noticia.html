@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:margin-top="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>CN ROBOTICS CORP.</title>
@@ -9,7 +9,6 @@
             background-image: url("../imatges_registre/fondo-celeste-oscuro-6269.jpg");
         }
 
-        /*******MENU************/
         header {
             position: fixed;
             width: 100%;
@@ -18,11 +17,13 @@
             left:0;
             background-color: rgba(255, 255, 255, 0.29);
         }
+
         div {
             float: left;
             width: 500px;
             margin-left: 15px;
         }
+
         img {
             width: 14%;
             height: auto;
@@ -32,17 +33,20 @@
             border-radius: 20%;
             float: left;
         }
+
         h6 {
             font-size: 20px;
             color: white;
             font-family: "Wide Latin";
             margin-top: 1.9em;
         }
+
         ul.menu {
             margin-top: 2em;
             list-style: none;
             float: right;
         }
+
         .menu li {
             float:left;
             margin-right: .7em;
@@ -51,35 +55,54 @@
             border-radius: 20%;
             transition: background-color, .6s;
         }
+
         .menu li:hover {
             background-color: rgba(0, 2, 95, 0.93);
             color: white;
             cursor: pointer;
         }
+
         a {
             font-family: "Trebuchet MS";
             text-decoration: none;
             color: black;
         }
+
         a:hover {
             color: white;
             text-decoration: none;
         }
+
         a:active {
             color: #00ff00;
             text-decoration: none;
         }
+        .imag {
+             /*margin-top: 10%;
+             margin-right:: 20%;*/
+             float: left;
+             width: 50%;
+             height: auto;
+         }
+        .contenidor {
+            margin-top: 10%;
+            margin-right: 45%;
 
-        /****************************/
-
-
-        .imttx1 {
-            border-radius: 10%;
-            float: left;
-            margin-top:10px;
-            margin-left: 10px;
+            width: 40%;
+            height: auto;
+            background-color: lime;
         }
-
+        .tit {
+            font-family: "Trebuchet MS";
+            font-size: 250%;
+            font-weight: bold;
+            color: black;
+        }
+        p {
+            font-family: "Trebuchet MS";
+            font-size: 100%;
+            color: #2e2e2e;
+        }
     </style>
 
 </head>
@@ -95,18 +118,21 @@
             <li><a href="noticia.html">Noticies</a></li>
             <li><a href="ficha.html">Ficha Tecnica</a></li>
             <li><a href="home.html">About Us</a></li>
-            <li><a href="login.html">Sortir</a></li>
+            <li><a href="index.html">Sortir</a></li>
         </ul>
     </nav>
-    <div class="texte">
-
-        <img class="imttx1" src="../imatges%20noticies/noticia1.jpg" alt="Foto d'exemple.">
-        <p>
-            NOticia falsa de wikipedia.
-        </p>
-    </div>
-
 </header>
 
+
+<div class="contenidor">
+    <img class= "imag" src="../imagesnoticies/noti1.jpg"/>
+    <p class="tit">Mi camarero es un robot</p>
+    <p>Abre en San Francisco un restaurante en el que el único humano es el reponedor de servilletas</p>
+</div>
+<div class="contenidor">
+    <img class="imag" src="../imagesnoticies/noti2.jpg" height="257" width="360"/>
+    <p class="tit">Mi camarero es un robot</p>
+    <p>Abre en San Francisco un restaurante en el que el único humano es el reponedor de servilletas</p>
+</div>
 </body>
 </html>
