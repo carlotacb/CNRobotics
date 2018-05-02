@@ -1,12 +1,17 @@
 # CNRobotics
-(Website created during a course of HTML, CSS and JavaScript in UPC)
 
 The project consists on a web page a for a Robotic group.
 
-### Content
+This project is a webpage implemented using HTML, CSS and JavaScript developed for a fictitious robotic company, the name is composed with the initial letters of the authors project (C from Carlota and N from Nicolas). This project was developed during a course of [JEDI Academy](https://cursos.jediupc.com/) on [Universitat Politècnica de Catalunya](https://www.upc.edu/ca).
 
-This is a amateur project done with the purpose of learn HTML, CSS and JavaScript.
+## Content
 
-In this repository you will find a webpage for a fictional robotics company. 
+The site have the next parts:
 
-The site has Login and Register screens. The userdata is temporally stored in the browser. Once the user is registered, a main page is show with the company's latest project, a option with the company's news and you can also submit a data sheet.
+* Login and Register screens (the userdata is temporally stored in the browser)
+* Main page screen in here is shown the company's latest project, a option with the company's news and you can also submit a data sheet.
+
+## Authors
+
+* **Nicolás Muscolo** - Co-developer - [AleixBalletbo](https://github.com/AleixBalletbo)
+* **Carlota Catot** - Co-developer - [carlotacb](https://github.com/carlotacb)
